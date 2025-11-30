@@ -1,0 +1,49 @@
+{
+  "name": "@meta-prompting/categorical-effect-poc",
+  "version": "1.0.0",
+  "description": "Categorical meta-prompting proof-of-concept using Effect-TS with verified functor laws",
+  "type": "module",
+  "main": "dist/effect-ts/categorical-meta-poc.js",
+  "types": "dist/effect-ts/categorical-meta-poc.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "example": "tsx effect-ts/example-runner.ts",
+    "example:basic": "tsx effect-ts/example-runner.ts --mode=basic",
+    "example:laws": "tsx effect-ts/example-runner.ts --mode=laws",
+    "example:benchmark": "tsx effect-ts/example-runner.ts --mode=benchmark",
+    "example:full": "tsx effect-ts/example-runner.ts --mode=full",
+    "example:all": "tsx effect-ts/example-runner.ts --mode=all",
+    "test": "tsx effect-ts/categorical-laws-test.ts",
+    "benchmark": "tsx effect-ts/benchmark-suite.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "effect-ts",
+    "category-theory",
+    "meta-prompting",
+    "functor",
+    "endofunctor",
+    "monad",
+    "ai",
+    "llm",
+    "prompt-engineering"
+  ],
+  "author": "LUXOR Research",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
+    "@effect/ai": "^0.32.1",
+    "@effect/platform": "^0.93.5",
+    "@effect/schema": "^0.75.5",
+    "effect": "^3.19.8",
+    "openai": "^6.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

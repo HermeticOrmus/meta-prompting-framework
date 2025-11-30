@@ -60,3 +60,15 @@ logs/
 # Environment
 .env
 .env.local
+
+# Current Research - Binary Artifacts
+current-research/stream-b-implementation/node_modules/
+current-research/stream-d-repositories/discopy/venv/
+current-research/stream-d-repositories/*/node_modules/
+current-research/stream-d-repositories/*/.venv/
+current-research/stream-d-repositories/*/venv/
+
+# Build outputs
+current-research/**/dist/
+current-research/**/*.pyc
+current-research/**/__pycache__/

@@ -1,0 +1,32 @@
+{
+  "1. Type-Safe Pipelines": {
+    "DisCoPy Pattern": "Ty for prompt states, >> for sequential flow",
+    "Meta-Prompting Use": "Task \u2192 Draft \u2192 Meta-Improve \u2192 Critique \u2192 Refine \u2192 Execute",
+    "Benefit": "Compositional correctness guaranteed by types",
+    "Code Example": "draft >> meta_improve >> critique >> refine >> execute"
+  },
+  "2. Multi-Strategy Execution": {
+    "DisCoPy Pattern": "Diagram (syntax) + Functor (semantics)",
+    "Meta-Prompting Use": "Same prompt logic, different models (GPT-4 vs Claude vs Llama)",
+    "Benefit": "Runtime backend selection, A/B testing, cost optimization",
+    "Code Example": "F_gpt4(pipeline), F_claude(pipeline), F_llama(pipeline)"
+  },
+  "3. Compositional Library": {
+    "DisCoPy Pattern": "Box as reusable operation",
+    "Meta-Prompting Use": "chain_of_thought >> few_shot >> output_format",
+    "Benefit": "Build complex prompts from modular components",
+    "Code Example": "role_spec >> CoT >> format >> self_consistency"
+  },
+  "4. Parallel Evaluation": {
+    "DisCoPy Pattern": "@ for parallel composition",
+    "Meta-Prompting Use": "Test 3 variants simultaneously",
+    "Benefit": "Concurrent execution, rapid A/B/C testing",
+    "Code Example": "(eval_v1 @ eval_v2 @ eval_v3) >> select_best"
+  },
+  "5. Conditional Logic": {
+    "DisCoPy Pattern": "Identity + alternative morphisms",
+    "Meta-Prompting Use": "quality_check -> accept | retry",
+    "Benefit": "Model branching logic categorically",
+    "Code Example": "check >> (accept | (retry >> improve))"
+  }
+}

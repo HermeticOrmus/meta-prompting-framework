@@ -1,0 +1,37 @@
+{
+  "1. Type System": {
+    "DisCoPy": "Ty('X') - Objects in category",
+    "Meta-Prompting": "TaskType, PromptType, ResultType - Compositional interfaces",
+    "Benefit": "Type safety prevents invalid compositions"
+  },
+  "2. Sequential Composition": {
+    "DisCoPy": "f >> g - Sequential application",
+    "Meta-Prompting": "generate >> improve >> execute - Prompt pipeline",
+    "Benefit": "Clear dataflow, guaranteed composability"
+  },
+  "3. Parallel Composition": {
+    "DisCoPy": "f @ g - Parallel application",
+    "Meta-Prompting": "Multi-aspect evaluation (syntax @ semantics)",
+    "Benefit": "Concurrent processing, modular analysis"
+  },
+  "4. Identity": {
+    "DisCoPy": "Id(X) - Pass-through",
+    "Meta-Prompting": "No-op placeholder in conditional pipelines",
+    "Benefit": "Uniform composition interface"
+  },
+  "5. Associativity": {
+    "DisCoPy": "(f >> g) >> h == f >> (g >> h)",
+    "Meta-Prompting": "No parentheses needed - composition 'just works'",
+    "Benefit": "Cognitive simplicity, guaranteed by category theory"
+  },
+  "6. Type Safety": {
+    "DisCoPy": "Composition fails if types don't match",
+    "Meta-Prompting": "Prevent invalid prompt sequences at construction time",
+    "Benefit": "Fail fast, clear error messages"
+  },
+  "7. Introspection": {
+    "DisCoPy": "diagram.boxes, diagram.dom, diagram.cod",
+    "Meta-Prompting": "Analyze prompt structure before execution",
+    "Benefit": "Optimization, debugging, verification"
+  }
+}

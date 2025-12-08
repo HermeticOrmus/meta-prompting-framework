@@ -38,14 +38,44 @@ Task: "Write function to find max number in list with error handling"
 
 ## Quick Start
 
-### 1. Install
+### Installation Options
+
+#### Option 1: Claude Code Plugin (Recommended)
+
+Install as a plugin for Claude Code to get skills, agents, commands, and workflows:
+
+```bash
+# Clone the repository
+git clone https://github.com/manutej/meta-prompting-framework.git
+cd meta-prompting-framework
+
+# Run the one-line installer
+./install-plugin.sh
+
+# Configure API key
+export ANTHROPIC_API_KEY=sk-ant-your-key-here
+```
+
+**What gets installed:**
+- 7+ skills for meta-prompting workflows
+- 4+ agents (meta2, MARS, MERCURIO)
+- 3+ commands (/grok, /meta-command)
+- 6+ orchestration workflows
+- Python meta-prompting engine
+
+**See [INSTALL.md](INSTALL.md) for detailed installation guide and [PLUGIN_README.md](PLUGIN_README.md) for complete plugin documentation.**
+
+#### Option 2: Standalone Python Library
+
+Use the meta-prompting engine directly in your Python projects:
+
 ```bash
 git clone https://github.com/manutej/meta-prompting-framework.git
 cd meta-prompting-framework
 pip install -r requirements.txt
 ```
 
-### 2. Configure
+Configure API key:
 ```bash
 cp .env.example .env
 # Edit .env and add: ANTHROPIC_API_KEY=sk-ant-your-key-here
@@ -64,6 +94,24 @@ python3 show_claude_responses.py
 ```
 
 ### 4. Use
+
+#### As Claude Code Plugin
+
+```
+# Use a skill
+Skill: "meta-prompt-iterate"
+Task: "Create a function to validate email addresses"
+
+# Launch an agent
+Task: subagent_type="meta2"
+Prompt: "Generate a 5-level meta-prompting framework"
+
+# Run a command
+/grok --mode deep --turns 3
+```
+
+#### As Python Library
+
 ```python
 from meta_prompting_engine.llm_clients.claude import ClaudeClient
 from meta_prompting_engine.core import MetaPromptingEngine
@@ -468,8 +516,12 @@ engine.llm.complete(
 | File | Purpose |
 |------|---------|
 | `README.md` | This file - main documentation |
+| `INSTALL.md` | Quick installation guide (< 2 minutes) |
+| `PLUGIN_README.md` | Complete plugin documentation |
+| `QUICK_REFERENCE.md` | Handy reference card |
 | `README_QUICKSTART.md` | 5-minute quick start |
-| `meta_prompting_engine/README.md` | API reference |
+| `CHANGELOG.md` | Version history |
+| `meta_prompting_engine/README.md` | Python API reference |
 | `VALIDATION_RESULTS.md` | Test report |
 | `IMPLEMENTATION_PLAN.md` | Roadmap |
 | `SUCCESS_SUMMARY.md` | Accomplishments |

@@ -1,10 +1,27 @@
 {
   "name": "meta-prompting-framework",
+  "displayName": "Meta-Prompting Framework",
   "version": "1.0.0",
   "description": "Recursive prompt improvement with quality-driven iteration for Claude Code CLI",
   "author": "manutej",
   "repository": "https://github.com/manutej/meta-prompting-framework",
+  "homepage": "https://github.com/manutej/meta-prompting-framework",
   "license": "MIT",
+  "keywords": [
+    "meta-prompting",
+    "prompt-engineering",
+    "recursive-improvement",
+    "quality-assessment",
+    "complexity-analysis",
+    "context-extraction",
+    "claude",
+    "ai-agents"
+  ],
+  "category": "ai-enhancement",
+  "compatibility": {
+    "claudeCode": ">=1.0.0",
+    "python": ">=3.8"
+  },
   "skills": [
     {
       "name": "analyze-complexity",
@@ -105,5 +122,37 @@
     "mock_validation": "validate_implementation.py",
     "real_api_test": "test_real_api.py",
     "demo": "show_claude_responses.py"
+  },
+  "installation": {
+    "script": "install-plugin.sh",
+    "manual": "PLUGIN_README.md"
+  },
+  "quickstart": {
+    "commands": [
+      "/grok - Interactive meta-prompting session",
+      "/meta-command - Generate new commands with meta-prompting"
+    ],
+    "skills": [
+      "meta-prompt-iterate - Full recursive improvement workflow",
+      "analyze-complexity - Determine optimal strategy"
+    ],
+    "agents": [
+      "meta2 - Universal meta-meta-prompt generator",
+      "MARS - Multi-Agent Research Synthesis"
+    ]
+  },
+  "features": [
+    "Recursive prompt improvement with real LLM integration",
+    "Complexity-based strategy selection (simple/medium/complex)",
+    "Context extraction from LLM outputs",
+    "Quality-driven iteration (0.0-1.0 scoring)",
+    "Production-ready with comprehensive testing",
+    "Claude API integration with token tracking"
+  ],
+  "documentation": {
+    "main": "README.md",
+    "quickstart": "README_QUICKSTART.md",
+    "plugin": "PLUGIN_README.md",
+    "api": "meta_prompting_engine/README.md"
   }
 }

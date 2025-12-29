@@ -46,7 +46,7 @@ Install as a plugin for Claude Code to get skills, agents, commands, and workflo
 
 ```bash
 # Clone the repository
-git clone https://github.com/HermeticOrmus/meta-prompting-framework.git
+git clone https://github.com/manutej/meta-prompting-framework.git
 cd meta-prompting-framework
 
 # Run the one-line installer
@@ -70,7 +70,7 @@ export ANTHROPIC_API_KEY=sk-ant-your-key-here
 Use the meta-prompting engine directly in your Python projects:
 
 ```bash
-git clone https://github.com/HermeticOrmus/meta-prompting-framework.git
+git clone https://github.com/manutej/meta-prompting-framework.git
 cd meta-prompting-framework
 pip install -r requirements.txt
 ```
@@ -588,7 +588,7 @@ MIT - see LICENSE file
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/HermeticOrmus/meta-prompting-framework/issues)
+- **Issues**: [GitHub Issues](https://github.com/manutej/meta-prompting-framework/issues)
 - **Docs**: See `/docs` directory
 - **Tests**: Run `python3 tests/validate_implementation.py`
 

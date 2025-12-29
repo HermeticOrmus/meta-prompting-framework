@@ -46,7 +46,7 @@ Install as a plugin for Claude Code to get skills, agents, commands, and workflo
 
 ```bash
 # Clone the repository
-git clone https://github.com/manutej/meta-prompting-framework.git
+git clone https://github.com/HermeticOrmus/meta-prompting-framework.git
 cd meta-prompting-framework
 
 # Run the one-line installer
@@ -70,7 +70,7 @@ export ANTHROPIC_API_KEY=sk-ant-your-key-here
 Use the meta-prompting engine directly in your Python projects:
 
 ```bash
-git clone https://github.com/manutej/meta-prompting-framework.git
+git clone https://github.com/HermeticOrmus/meta-prompting-framework.git
 cd meta-prompting-framework
 pip install -r requirements.txt
 ```
@@ -84,13 +84,13 @@ cp .env.example .env
 ### 3. Test
 ```bash
 # Validate without API key (uses mocks)
-python3 validate_implementation.py
+python3 tests/validate_implementation.py
 
 # Test with real Claude API
-python3 test_real_api.py
+python3 tests/test_real_api.py
 
 # Show actual Claude responses
-python3 show_claude_responses.py
+python3 examples/show_claude_responses.py
 ```
 
 ### 4. Use
@@ -422,13 +422,13 @@ for i, call in enumerate(engine.llm.call_history):
 
 ```bash
 # Mock validation (no API key needed)
-python3 validate_implementation.py
+python3 tests/validate_implementation.py
 
 # Real API tests
 pytest tests/test_core_engine.py -v
 
 # Show actual Claude responses
-python3 show_claude_responses.py
+python3 examples/show_claude_responses.py
 ```
 
 ### Test Results
@@ -516,15 +516,14 @@ engine.llm.complete(
 | File | Purpose |
 |------|---------|
 | `README.md` | This file - main documentation |
-| `INSTALL.md` | Quick installation guide (< 2 minutes) |
-| `PLUGIN_README.md` | Complete plugin documentation |
-| `QUICK_REFERENCE.md` | Handy reference card |
-| `README_QUICKSTART.md` | 5-minute quick start |
+| `INSTALL.md` | Quick installation guide |
 | `CHANGELOG.md` | Version history |
-| `meta_prompting_engine/README.md` | Python API reference |
-| `VALIDATION_RESULTS.md` | Test report |
-| `IMPLEMENTATION_PLAN.md` | Roadmap |
-| `SUCCESS_SUMMARY.md` | Accomplishments |
+| `docs/PLUGIN_README.md` | Complete plugin documentation |
+| `docs/QUICK_REFERENCE.md` | Handy reference card |
+| `docs/QUICKSTART.md` | 5-minute quick start |
+| `docs/VALIDATION_RESULTS.md` | Test report |
+| `docs/plans/` | Implementation roadmaps |
+| `meta_prompting_engine/` | Python API reference |
 
 ---
 
@@ -589,9 +588,9 @@ MIT - see LICENSE file
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/manutej/meta-prompting-framework/issues)
+- **Issues**: [GitHub Issues](https://github.com/HermeticOrmus/meta-prompting-framework/issues)
 - **Docs**: See `/docs` directory
-- **Tests**: Run `python3 validate_implementation.py`
+- **Tests**: Run `python3 tests/validate_implementation.py`
 
 ---
 

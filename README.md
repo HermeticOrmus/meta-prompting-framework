@@ -1,4 +1,21 @@
-# Meta-Prompting Framework
+<p align="center">
+  <img src="https://ormus.solutions/mascot/pixellab_liquid_to_golden_ratio.gif" alt="Meta-Prompting Framework" width="128" style="image-rendering: pixelated;" />
+</p>
+
+<h1 align="center">Meta-Prompting Framework</h1>
+
+<p align="center">
+  <em>Category theory-based prompt improvement -- 82%+ quality gains</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/HermeticOrmus/meta-prompting-framework/stargazers"><img src="https://img.shields.io/github/stars/HermeticOrmus/meta-prompting-framework?style=flat-square&color=aa8142" alt="Stars" /></a>
+  <a href="https://github.com/HermeticOrmus/meta-prompting-framework/blob/main/LICENSE"><img src="https://img.shields.io/github/license/HermeticOrmus/meta-prompting-framework?style=flat-square&color=aa8142" alt="License" /></a>
+  <a href="https://github.com/HermeticOrmus/meta-prompting-framework/commits"><img src="https://img.shields.io/github/last-commit/HermeticOrmus/meta-prompting-framework?style=flat-square&color=aa8142" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/badge/Python-aa8142?style=flat-square&logo=python&logoColor=white" alt="Python" />
+</p>
+
+---
 
 **Recursive prompt improvement with real LLM integration**
 
